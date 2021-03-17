@@ -2,6 +2,10 @@ const path = require('path')
 const { join } = require('path')
 require('dotenv').config()
 exports.config = {
+    credentials: {
+        username: 'sbuckhoff',
+        password: 'automation01!'
+    },
     //
     // ====================
     // Runner Configuration
