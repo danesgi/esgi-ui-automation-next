@@ -84,7 +84,7 @@ exports.config = {
           `./test/specs/schooladminaccount/Reports*.spec.js`
       ],
       reports2: [
-          `./test/specs/reportsspecs/GradeScaleReports/GradeScale*.spec.js`
+          `./test/specs/reportsspecs/GradeScaleReports/GradeScaleReportNoGradeScales.spec.js`
       ],
       reports3: [
           `./test/specs/reportsspecs/ParentLetter*.spec.js`,
@@ -124,6 +124,18 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    /**
+     * The number of times to retry the entire specfile when it fails as a whole
+     */
+    specFileRetries: 1,
+    /**
+     * Delay in seconds between the spec file retry attempts
+     */
+    specFileRetriesDelay: 0,
+    /**
+     * Retried specfiles are inserted at the beginning of the queue and retried immediately
+     */
+    specFileRetriesDeferred: false,
     //
     // ============
     // Capabilities
@@ -364,10 +376,6 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
