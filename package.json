@@ -26,6 +26,7 @@
     "itemanalysis": "wdio ./test/config/wdio.reports.conf.js --suite itemanalysis",
     "studentdetail": "wdio ./test/config/wdio.reports.conf.js --suite studentdetail",
     "studentprogress": "wdio ./test/config/wdio.reports.conf.js --suite studentprogress",
+    "rep": "wdio ./test/config/wdio.reports.conf.js --suite reports",
     "reports1": "wdio ./test/config/wdio.reports.conf.js --suite reports1",
     "reports2": "wdio ./test/config/wdio.reports.conf.js --suite reports2",
     "reports3": "wdio ./test/config/wdio.reports.conf.js --suite reports3",
