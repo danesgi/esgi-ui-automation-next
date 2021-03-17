@@ -12,7 +12,7 @@ const { task, series } = require('gulp');
         'screenshots/diff',
         'screenshots/actual',
         'errorshots',
-        'reports',
+        'test/reports',
         'allure-report',
         'test/pdfs/data/actual',
         'test/pdfs/data/diffPngs')
@@ -20,7 +20,7 @@ const { task, series } = require('gulp');
     }
 
     function createdirs (cb) {
-        shell.mkdir('-p', 'screenshots', 'errorshots', 'test/pdfs/data/actual')
+        shell.mkdir('-p', 'screenshots', 'errorshots', 'test/pdfs/data/actual', 'test/reports')
         cb()
     }
 
